@@ -8,10 +8,12 @@
 
   <ItemGroup>
     <Content Remove="wwwroot\js\carrinho.js" />
+    <Content Remove="wwwroot\js\slider.js" />
   </ItemGroup>
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\js\carrinho.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\slider.js" />
   </ItemGroup>
 
   <ItemGroup>
@@ -29,6 +31,11 @@
 
   <ItemGroup>
     <None Include="wwwroot\js\carrinho.js" />
+    <None Include="wwwroot\js\slider.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
 </Project>

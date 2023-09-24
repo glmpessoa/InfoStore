@@ -1,48 +1,188 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
+﻿
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #0077ffad;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    padding-right: 40px;
 }
 
-a {
-  color: #0077cc;
+.logo-img {
+    position: relative;
+    height: 50px;
+    width: 50px;
 }
 
-.btn-primary {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+#logo-txt {
+    letter-spacing: -1.5px;
 }
 
-.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-  color: #fff;
-  background-color: #1b6ec2;
-  border-color: #1861ac;
+.logo {
+    display: flex;
+    align-items: center;
 }
 
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
+.logo-container {
+    display: flex;
+    align-items: center;
 }
 
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+.search-container {
+    display: flex;
+    align-items: center;
+    flex: 0 1 500px;
+    margin-left: 40px;
 }
 
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
+    .search-container form {
+        position: relative;
+        width: 100%;
+    }
+
+    .search-container input {
+        height: 40px;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-color: #ffffff;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 12px;
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .search-container .search {
+        min-width: 60px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 999;
+        background-color: #ffffff;
+        outline: none;
+        border: none;
+    }
+
+
+
+.items-container {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+.profile-container i {
+    margin-left: 25px;
+}
+
+.profile-box {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 30px;
+}
+
+/* Footer */
+
+/*Inicio do roda pe*/
+
+.rodape {
+    position: absolute;
+    bottom: 0; /* Posiciona o rodapé no final da página */
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+    .rodape a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .rodape p {
+        margin-bottom: 5px;
+    }
+
+.rodape-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+
+.rodape-div-1, .rodape-div-2, .rodape-div-3, .rodape-div-4 {
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+
+.rodape-div-3-coluna p a:hover {
+    color: #000000;
+}
+
+.rodape span {
+    font-size: 20px;
+    color: white;
+}
+
+
+/* Icones de empresas */
+.footer_profile {
+    margin-bottom: 30px;
+    margin-left: 70%;
+}
+
+    .footer_profile ul {
+        list-style: outside none none;
+        margin: 0;
+        padding: 0
+    }
+
+        .footer_profile ul li {
+            display: inline-block;
+        }
+
+            .footer_profile ul li a img {
+                width: 60px;
+            }
+
+            .footer_profile ul li a {
+                background: #0031b9;
+                width: 40px;
+                height: 40px;
+                display: block;
+                text-align: center;
+                margin-right: 5px;
+                border-radius: 50%;
+                line-height: 40px;
+                box-sizing: border-box;
+                text-decoration: none;
+                -webkit-transition: .3s;
+                transition: .3s;
+                color: #fff;
+            }
+
+                .footer_profile ul li a:hover {
+                    background-color: rgba(248, 3, 3, 0.466);
+                }
+
+.footer_copyright {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
 }

@@ -4,7 +4,7 @@ namespace InfoStore.Controllers
 {
     public class ContaController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Login()
         {
             List<string> contas = new List<string>();
             contas.Add("Conta 1");
@@ -16,6 +16,11 @@ namespace InfoStore.Controllers
             contas.Add("Conta 17");
             contas.Add("Conta 20");
             return View(contas);
+        }
+
+        public IActionResult Registro() 
+        { 
+            return View();
         }
     }
 }
