@@ -7,12 +7,21 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="wwwroot\lib\bootstrap\dist\css\**" />
+    <Content Remove="wwwroot\lib\bootstrap\dist\css\**" />
+    <EmbeddedResource Remove="wwwroot\lib\bootstrap\dist\css\**" />
+    <None Remove="wwwroot\lib\bootstrap\dist\css\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="wwwroot\js\carrinho.js" />
+    <Content Remove="wwwroot\js\home.js" />
     <Content Remove="wwwroot\js\slider.js" />
   </ItemGroup>
 
   <ItemGroup>
     <_ContentIncludedByDefault Remove="wwwroot\js\carrinho.js" />
+    <_ContentIncludedByDefault Remove="wwwroot\js\home.js" />
     <_ContentIncludedByDefault Remove="wwwroot\js\slider.js" />
   </ItemGroup>
 
@@ -31,6 +40,7 @@
 
   <ItemGroup>
     <None Include="wwwroot\js\carrinho.js" />
+    <None Include="wwwroot\js\home.js" />
     <None Include="wwwroot\js\slider.js" />
   </ItemGroup>
 

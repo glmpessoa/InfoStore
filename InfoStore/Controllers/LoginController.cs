@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using InfoStore.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace InfoStore.Controllers
 {
@@ -10,7 +11,7 @@ namespace InfoStore.Controllers
         }
 
         [HttpPost]
-        public IActionResult Index(string login, string senha)
+        public IActionResult Index(string email, string senha)
         {
             TempData["sucesso"] = "Logado com sucesso";
             return RedirectToAction("Index");
